@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+<!-- <script src="WEB-INF/lib/angular.js"></script>
+<script src="WEB-INF/lib/angular-route.js"></script>
+ -->
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+</head>
+<body ng-app="chat">
+<hr>
+<a href='#/home'>Home</a>
+<a href='#/blog'>blog</a>
+<a href='#/job'>job</a>
+<a href='#/friend'>Friend</a>
+<a href='#/login'>login</a>
+<a href='#/'>logout</a>
+<a href='#/admin'>admin</a>
+<a href='#/alumni'>alumni</a>
+<a href='#/student'>student </a>
+
+<hr>
+<div ng-view></div>
+<script src="app.js"></script>
+<script src="Home/HomeController.js"></script>
+<script src="Blog/blogController.js"></script>
+<script src="Jobs/jobController.js"></script>
+<script src="Friend/friendController.js"></script>
+<script src="user/loginController.js"></script>
+<script src="user/logoutController.js"></script>
+<script src="user/admin/adminController.js"></script>
+<script src="user/alumni/alumniController.js"></script>
+<script src="user/student/StudentController.js"></script>
+<script src="Home/indexController.js"></script>
+
+</body>
+</html>

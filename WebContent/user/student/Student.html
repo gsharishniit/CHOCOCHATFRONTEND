@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div ng-include src="'xerox/Stu&almNavbar.html'"></div>
+
+  
+<div class="container">
+  <h3>Right Aligned Navbar</h3>
+  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+</div>
+
+
+
+ <div class="row">
+ 
+ 		<div class="col-sm-3" style="background-color:lavender;">
+ 		     code for list of alumini
+ 		     <div ng-include src='"xerox/alumnilist.html"'></div>
+        </div>
+    	<div class="col-sm-6" style="background-color:lavenderblush;">
+    	    <div ng-include src='"Blog/blog.html"'></div>
+          code for body like blogs chat form etccc.col-sm-4
+       </div>
+    	<div class="col-sm-3" style="background-color:lavender;">
+    	      <div ng-include src='"xerox/studentlist.html"'></div>
+         code for list of students
+    
+    
+    .col-sm-4</div>
+  </div>
+</body>
+</html>

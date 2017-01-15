@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">{message}</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Friend</a></li>
+          <li><a href="#">chat</a></li>
+          <li><a href="#">jobs</a></li>
+        </ul>
+      </li>
+      
+      
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">DETAILS<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            
+        <li><a href="p1.jsp"><span class="glyphicon glyphicon-user"></span>PROFILE </a></li>
+        
+       
+        <li><a href="/#home"><span class="glyphicon glyphicon-off"></span> Logout</a></li>
+          
+          
+        <li><a href="#"><span class="glyphicon glyphicon-cog"></span> settings</a></li>
+          
+          </ul>
+        </li>
+      
+ 
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Right Aligned Navbar</h3>
+  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+</div>
+ <div class="row">
+    <div class="col-sm-3" style="background-color:lavender;">
+    
+    code for list of students
+    <div  data-ng-controller="repeatController" >
+	<div>
+search:<input type="text" placeholder="search alumni" data-ng-model="User"/>
+<br><br>
+<table class="table table-bordered table-hover table-striped">
+ <tr>
+ <th>alumni name</th>
+ <th>status</th>
+</tr> 
+<tr class="success" data-ng-repeat="ad in adproduct|filter:User">
+             
+                 <td><a href="UpdateProduct?adpid={{ad.pid}}">{{ad.pname}}</a></td>
+                
+                <td> {{ad.status}}</td>
+                     <td></td>
+                
+</tr>
+</table>
+</div>
+	</div>
+
+    
+    
+    
+    </div>
+    
+    
+    <div class="col-sm-6" style="background-color:lavenderblush;">
+    code for body like blogs chat form etccc
+    
+    
+    
+    
+    
+    .col-sm-4</div>
+    <div class="col-sm-3" style="background-color:lavender;">
+     code for list of students
+    <div  data-ng-controller="repeatController" >
+	<div>
+search:<input type="text" placeholder="search student" data-ng-model="User"/>
+<br><br>
+<table class="table table-bordered table-hover table-striped">
+ <tr>
+ <th>alumni name</th>
+ <th>status</th>
+</tr> 
+<tr class="success" data-ng-repeat="ad in adproduct|filter:User">
+             
+                 <td><a href="UpdateProduct?adpid={{ad.pid}}">{{ad.pname}}</a></td>
+                
+                <td> {{ad.status}}</td>
+                     <td></td>
+                
+</tr>
+</table>
+</div>
+	</div>
+
+    
+    
+    
+    
+    
+    code for list of alumini
+    
+    .col-sm-4</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+ <div  data-ng-controller="repeatController" >
+	<div>
+search:<input type="text" placeholder="search student" data-ng-model="User"/>
+<br><br>
+<table class="table table-bordered table-hover table-striped">
+ <tr>
+ <th>student name</th>
+ <th>status</th>
+</tr> 
+<tr class="success" data-ng-repeat="ad in adproduct|filter:User">
+             
+                 <td><a href="UpdateProduct?adpid={{ad.pid}}">{{ad.pname}}</a></td>
+                
+                <td> {{ad.status}}</td>
+                     <td></td>
+                
+</tr>
+</table>
+</div>
+	</div>
+
+
+
+</body>
+</html>
